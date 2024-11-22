@@ -64,7 +64,6 @@ else:
 
 
 '''
-'''
 # Write a program to print all Armstrong numbers within the given range using Functions.
 
 def Armstrong_Number(n1,n2):
@@ -85,3 +84,16 @@ m2 = int(input("Enter ending number: "))
 print(f"Armstrong numbers between {m1} and {m2} are ")
 Armstrong_Number(m1,m2)
 
+
+'''
+
+for i in range(1001):
+    num = i
+    result = 0
+    n = len(str(i))
+    while(i!=0):
+        digit = i % 10
+        result += digit ** n
+        i = i//10
+    if num == result:
+        print(num)
