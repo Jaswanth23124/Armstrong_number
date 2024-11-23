@@ -1,9 +1,24 @@
+# Write a program to find its factorial number without any method using functions
+def Factorial_Number(n):
+    result = 1
+    for i in range(n,1,-1):
+        result*=i
+    print(result)
+x = int(input("Enter a number to find its Factorial number: "))
+Factorial_Number(x)
+
+
+
+'''
+
 import math
 def factorial_number(n):
     result = math.factorial(n)
     print(result)
 x = int(input("Enter a number to get its factorial number: "))
 factorial_number(x)
+
+'''
 
 
 '''
